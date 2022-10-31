@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-section{
+    display: flex;
+    transform: translateX(-80%);
+    transition: all 1s;
+    position: absolute;
+}
+.nav-section:hover{
+    transform: translateX(0);
+}
+.sidebar{
+    height: 100vh;
+    width: 120px;
+    background-color: rgb(161, 187, 187);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.nav-btn{
+    height: 100vh;
+    width: 35px;
+    background-color: rgb(43, 41, 41);
+    color: aliceblue;
+    font-size: 2em;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-brand{
+    font-size: 2em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-items ul{
+    margin-top: 50px;
 }
-
-.App-link {
-  color: #61dafb;
+ul li{
+    margin: 40px;
+    list-style: none;
+    
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color:black;
+    }
+    .link:hover{
+        cursor: pointer;
+        color: white;
+        
+    }
+    .category1{
+        background-image: url('https://images.pexels.com/photos/7338/night-clouds-trees-milky-way.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+    }
+    .home{
+        background-image: url('https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+    }
+.category2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:50px
 }
